@@ -16416,11 +16416,29 @@ textarea.form-control:active {
   background: -o-linear-gradient(0deg, #6b1b9a 0%, #3bafa2 100%);
   background: -moz-linear-gradient(0deg, #18c88b 0%, #105fd3 100%);
   background: linear-gradient(0deg, #ba54f5 0%, #34baf7 100%);
+  animation: myanimation 10s infinite;
+
   position: absolute;
   transition: 0.5s ease-out;
   overflow: hidden;
   border-radius: 20%;
 }
+
+
+@keyframes myanimation {
+  0% {  background: linear-gradient(0deg, #ffffff 0%, #34baf7 100%);
+}
+  25%{ background: linear-gradient(0deg, #7f74ac 0%, #34baf7 100%);
+}
+  50%{  background: linear-gradient(0deg, #ba54f5 0%, #34baf7 100%);
+}
+  75%{  background: linear-gradient(0deg, #f76a34 0%, #34baf7 100%);
+}
+  100%{   background: linear-gradient(0deg, #ff0303 0%, #34baf7 100%);
+}
+}
+
+
 .index-page .squares.square1 {
   animation: move-left-right 4s infinite;
   height: 300px;
